@@ -1,0 +1,14 @@
+{{ partial "header.html" . }}
+
+{{ if or .Params.math .Site.Params.math }}
+{{ partial "math.html" . }}
+{{ end }}
+
+
+<div class="container">
+    <div class="section">
+    {{ block "main" . }}{{ end }}
+    </div>
+</div>
+
+{{ partial "footer.html" . }}
