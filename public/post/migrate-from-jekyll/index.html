@@ -9,14 +9,14 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
-    <link rel="stylesheet" href="https://agitated-pike-df43ae.netlify.app/css/blog.css" />
+    <link rel="stylesheet" href="https://jasb.netlify.app/css/blog.css" />
     </head>
 <body>
 
     
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a class="navbar-item" href="https://agitated-pike-df43ae.netlify.app/">Home</a>
+            <a class="navbar-item" href="https://jasb.netlify.app/">Home</a>
         </div>
     </nav>
     
@@ -38,7 +38,7 @@
                 
             </div>
 		</div>
-		<iframe width="100%" height="200"; frameborder="0"; scrolling="no" src="https://agitated-pike-df43ae.netlify.app/bower_components/particlesjs/particlesjs.html"></iframe>
+		<iframe width="100%" height="200"; frameborder="0"; scrolling="no" src="https://jasb.netlify.app/bower_components/particlesjs/particlesjs.html"></iframe>
     </section>
 
 
@@ -69,7 +69,7 @@ With Jekyll, something that looked like</p>
 </code></pre>
 <p>Additionally, you&rsquo;ll want any files that should reside at the root (such as <code>CNAME</code>) to be moved to <code>static</code>.</p>
 <h2 id="create-your-hugo-configuration-file">Create your Hugo configuration file</h2>
-<p>Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the <a href="https://agitated-pike-df43ae.netlify.app/overview/configuration/">Hugo configuration documentation</a> for details.</p>
+<p>Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the <a href="https://jasb.netlify.app/overview/configuration/">Hugo configuration documentation</a> for details.</p>
 <h2 id="set-your-configuration-publish-folder-to-_site">Set your configuration publish folder to <code>_site</code></h2>
 <p>The default is for Jekyll to publish to <code>_site</code> and for Hugo to publish to <code>public</code>. If, like me, you have <a href="http://blog.blindgaenger.net/generate_github_pages_in_a_submodule.html"><code>_site</code> mapped to a git submodule on the <code>gh-pages</code> branch</a>, you&rsquo;ll want to do one of two alternatives:</p>
 <ol>
@@ -91,10 +91,10 @@ With Jekyll, something that looked like</p>
 </li>
 </ol>
 <h2 id="convert-jekyll-templates-to-hugo-templates">Convert Jekyll templates to Hugo templates</h2>
-<p>That&rsquo;s the bulk of the work right here. The documentation is your friend. You should refer to <a href="http://jekyllrb.com/docs/templates/">Jekyll&rsquo;s template documentation</a> if you need to refresh your memory on how you built your blog and <a href="https://agitated-pike-df43ae.netlify.app/layout/templates/">Hugo&rsquo;s template</a> to learn Hugo&rsquo;s way.</p>
+<p>That&rsquo;s the bulk of the work right here. The documentation is your friend. You should refer to <a href="http://jekyllrb.com/docs/templates/">Jekyll&rsquo;s template documentation</a> if you need to refresh your memory on how you built your blog and <a href="https://jasb.netlify.app/layout/templates/">Hugo&rsquo;s template</a> to learn Hugo&rsquo;s way.</p>
 <p>As a single reference data point, converting my templates for <a href="http://heyitsalex.net/">heyitsalex.net</a> took me no more than a few hours.</p>
 <h2 id="convert-jekyll-plugins-to-hugo-shortcodes">Convert Jekyll plugins to Hugo shortcodes</h2>
-<p>Jekyll has <a href="http://jekyllrb.com/docs/plugins/">plugins</a>; Hugo has <a href="https://agitated-pike-df43ae.netlify.app/doc/shortcodes/">shortcodes</a>. It&rsquo;s fairly trivial to do a port.</p>
+<p>Jekyll has <a href="http://jekyllrb.com/docs/plugins/">plugins</a>; Hugo has <a href="https://jasb.netlify.app/doc/shortcodes/">shortcodes</a>. It&rsquo;s fairly trivial to do a port.</p>
 <h3 id="implementation">Implementation</h3>
 <p>As an example, I was using a custom <a href="https://github.com/alexandre-normand/alexandre-normand/blob/74bb12036a71334fdb7dba84e073382fc06908ec/_plugins/image_tag.rb"><code>image_tag</code></a> plugin to generate figures with caption when running Jekyll. As I read about shortcodes, I found Hugo had a nice built-in shortcode that does exactly the same thing.</p>
 <p>Jekyll&rsquo;s plugin:</p>
@@ -197,23 +197,23 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
         <h1 class="title is-5">Tags</h1>
         <div class="tags">
         
-            <span class="tag"><a href="https://agitated-pike-df43ae.netlify.app/tags/development">development</a></span>
+            <span class="tag"><a href="https://jasb.netlify.app/tags/development">development</a></span>
         
-            <span class="tag"><a href="https://agitated-pike-df43ae.netlify.app/tags/go">go</a></span>
+            <span class="tag"><a href="https://jasb.netlify.app/tags/go">go</a></span>
         
-            <span class="tag"><a href="https://agitated-pike-df43ae.netlify.app/tags/golang">golang</a></span>
+            <span class="tag"><a href="https://jasb.netlify.app/tags/golang">golang</a></span>
         
-            <span class="tag"><a href="https://agitated-pike-df43ae.netlify.app/tags/hugo">hugo</a></span>
+            <span class="tag"><a href="https://jasb.netlify.app/tags/hugo">hugo</a></span>
         
-            <span class="tag"><a href="https://agitated-pike-df43ae.netlify.app/tags/plot">plot</a></span>
+            <span class="tag"><a href="https://jasb.netlify.app/tags/plot">plot</a></span>
         
-            <span class="tag"><a href="https://agitated-pike-df43ae.netlify.app/tags/r-markdown">r-markdown</a></span>
+            <span class="tag"><a href="https://jasb.netlify.app/tags/r-markdown">r-markdown</a></span>
         
-            <span class="tag"><a href="https://agitated-pike-df43ae.netlify.app/tags/regression">regression</a></span>
+            <span class="tag"><a href="https://jasb.netlify.app/tags/regression">regression</a></span>
         
-            <span class="tag"><a href="https://agitated-pike-df43ae.netlify.app/tags/templates">templates</a></span>
+            <span class="tag"><a href="https://jasb.netlify.app/tags/templates">templates</a></span>
         
-            <span class="tag"><a href="https://agitated-pike-df43ae.netlify.app/tags/themes">themes</a></span>
+            <span class="tag"><a href="https://jasb.netlify.app/tags/themes">themes</a></span>
         
         </div>          
     </div>
@@ -222,19 +222,19 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
     <div class="card-content">
         <h1 class="title is-5">Recent posts</h1>
         
-            <h1><a href="https://agitated-pike-df43ae.netlify.app/post/2015-07-23-r-rmarkdown/">Hello R Markdown</a></h1>
+            <h1><a href="https://jasb.netlify.app/post/2015-07-23-r-rmarkdown/">Hello R Markdown</a></h1>
             <time class="has-text-grey-light is-size-7">23 July 2015</time>
         
-            <h1><a href="https://agitated-pike-df43ae.netlify.app/post/creating-a-new-theme/">Creating a New Theme</a></h1>
+            <h1><a href="https://jasb.netlify.app/post/creating-a-new-theme/">Creating a New Theme</a></h1>
             <time class="has-text-grey-light is-size-7">28 September 2014</time>
         
-            <h1><a href="https://agitated-pike-df43ae.netlify.app/post/hugoisforlovers/">Getting Started with Hugo</a></h1>
+            <h1><a href="https://jasb.netlify.app/post/hugoisforlovers/">Getting Started with Hugo</a></h1>
             <time class="has-text-grey-light is-size-7">2 April 2014</time>
         
-            <h1><a href="https://agitated-pike-df43ae.netlify.app/post/goisforlovers/">(Hu)go Template Primer</a></h1>
+            <h1><a href="https://jasb.netlify.app/post/goisforlovers/">(Hu)go Template Primer</a></h1>
             <time class="has-text-grey-light is-size-7">2 April 2014</time>
         
-            <h1><a href="https://agitated-pike-df43ae.netlify.app/post/migrate-from-jekyll/">Migrate to Hugo from Jekyll</a></h1>
+            <h1><a href="https://jasb.netlify.app/post/migrate-from-jekyll/">Migrate to Hugo from Jekyll</a></h1>
             <time class="has-text-grey-light is-size-7">10 March 2014</time>
         
     </div>
@@ -249,9 +249,9 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
     <div class="card-content">
         <h1 class="title is-5">Archives</h1>
         
-            <a href="https://agitated-pike-df43ae.netlify.app/archives/2015">2015</a> (1)<br>
+            <a href="https://jasb.netlify.app/archives/2015">2015</a> (1)<br>
         
-            <a href="https://agitated-pike-df43ae.netlify.app/archives/2014">2014</a> (4)<br>
+            <a href="https://jasb.netlify.app/archives/2014">2014</a> (4)<br>
         
     </div>
 </div>
@@ -271,7 +271,7 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
             <span class="icon is-large"><a href="https://github.com/" class="mysocial" rel="me"><i class="fab fa-github fa-2x"></i></a></span>&nbsp;&nbsp;
             <br><br>
             Copyright &copy; just another stats blog 2020 - Theme by <a href="https://jeffprod.com" class="mysocial">JeffProd.com</a>
-            - <a class="mysocial" href="https://agitated-pike-df43ae.netlify.app/about">About</a>
+            - <a class="mysocial" href="https://jasb.netlify.app/about">About</a>
         </p>
     </div>
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
