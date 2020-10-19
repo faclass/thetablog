@@ -1,6 +1,10 @@
 html,body {
     font-family: 'Open Sans', sans-serif;
     background: #F0F2F4;
+    position: relative;
+    min-height: 100%;
+    min-height: 100vh;
+    overflow:auto;
     }
 .hero-body {
     background-position: center;
@@ -9,3 +13,10 @@ html,body {
     }
 .mysocial { color: hsl(0, 0%, 100%);}
 .mysocial:hover { color: hsl(0, 0%, 71%) }
+
+
+#over { margin: 0;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)}
