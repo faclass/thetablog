@@ -1,8 +1,8 @@
 baseurl = "https://jasb.netlify.app/"
 math = true
 title = "just another stats blog"
-author = "@JeffProd"
-copyright = "Copyright © 2008–2018, @JeffProd"
+author = "@Fabian Class"
+copyright = "Copyright © 2020, @Fabian Class"
 canonifyurls = true
 paginate = 3
 
