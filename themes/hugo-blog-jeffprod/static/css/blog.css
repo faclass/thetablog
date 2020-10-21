@@ -2,8 +2,6 @@ html,body {
     font-family: 'Open Sans', sans-serif;
     background: #F0F2F4;
     position: relative;
-    min-height: 100%;
-    min-height: 100vh;
     overflow:auto;
     }
 .hero-body {
@@ -17,12 +15,6 @@ html,body {
 .mysocial { color: hsl(0, 0%, 100%);}
 .mysocial:hover { color: hsl(0, 0%, 71%) }
 
-.container {
-  min-height: calc(100vh - 70px);
-}
-.footer {
-  height: 70px;
-}
 
 #over { margin: 0;
     position: absolute;

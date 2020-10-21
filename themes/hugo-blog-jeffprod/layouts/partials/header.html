@@ -28,11 +28,9 @@
     <section class="hero is-info has-background-white">
 
 
-        		<div id="over">
-<div class="container is-max-desktop has-text-centered">
-                <br><br><br>
-                <br><br><br>   
-                <br><br><br>
+<!--<div class="container is-max-desktop has-text-centered">-->
+<div id="over">
+<br><br><br><br><br><br><br><br><br><br><br>
                 <h1 class="title is-size-1">
                     {{ if eq .Type "tags" }}
                         #{{ .Title }}
@@ -46,7 +44,6 @@
                     {{ .Date.Format "January 2, 2006" }} &middot;&nbsp;{{ .ReadingTime }} min read
                 {{ end }}
             </div>
-		</div>
+		<!--</div>-->
 		<iframe width="100%" height="200"; frameborder="0"; scrolling="no" src="{{ .Site.BaseURL }}bower_components/particlesjs/particlesjs.html"></iframe>
     </section>
-
